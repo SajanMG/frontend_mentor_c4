@@ -3,6 +3,9 @@
 body {
   font-family: "Overpass", sans-serif;
   background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 
@@ -18,7 +21,6 @@ body {
 main {
   background-color: hsl(213, 19%, 18%);
   padding: 20px;
- 
 }
 
 .front {
@@ -44,9 +46,12 @@ h1 {
   width: 100%;
 }
 
-@media screen and (min-width:375px) and (max-width:480px) {
+@media screen and (min-width:360px) and (max-width:760px) {
+  body{
+    height: 120vh;
+    max-height: 400px;
+  }
   main {
-    margin: 50% 10px;
     border-radius: 20px;
   }
 
@@ -80,11 +85,12 @@ h1 {
     font-size: 0.8rem;
     font-weight: 700;
   }
- 
-  .rate:focus{
+
+  .rate:focus {
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
   }
+
   .icon-wrapper {
     height: 30px;
     width: 30px;
@@ -107,28 +113,31 @@ h1 {
   .thank-you {
     display: flex;
     flex-direction: column;
-    text-align:center ;
+    text-align: center;
     gap: 1rem;
   }
-  .image{
-    padding:0.5rem;
+
+  .image {
+    padding: 0.5rem;
   }
+
   .messgae {
     margin: 1rem 0rem;
   }
-  
-  .selected-rate span{
+
+  .selected-rate span {
     color: hsl(25, 97%, 53%);
     padding: .5rem 1rem;
-    background-color:hsl(213, 19%, 30%);
+    background-color: hsl(213, 19%, 30%);
     border-radius: 25px;
     font-size: 0.9rem;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:761px) and (max-width:1440px) {
   main {
-    margin: 10rem 33rem;
+    width: 360px;
+    max-width:50%;
     border-radius: 20px;
   }
 
@@ -151,6 +160,7 @@ h1 {
     display: flex;
     justify-content: space-between;
   }
+
   .rate {
     height: 40px;
     width: 40px;
@@ -161,15 +171,18 @@ h1 {
     font-size: 0.8rem;
     font-weight: 700;
   }
+
   .rate:hover {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     cursor: pointer;
   }
-  .rate:focus{
+
+  .rate:focus {
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
   }
+
   .icon-wrapper {
     height: 30px;
     width: 30px;
@@ -189,33 +202,34 @@ h1 {
     letter-spacing: 1.5px;
   }
 
-  .btn-submit:hover{
-    background-color:hsl(0, 0%, 100%);
+  .btn-submit:hover {
+    background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
     cursor: pointer;
   }
-  
+
 
   .thank-you {
     display: flex;
     flex-direction: column;
-    text-align:center ;
+    text-align: center;
     gap: 1.5rem;
   }
-  .image{
-    padding:2rem;
+
+  .image {
+    padding: 2rem;
   }
+
   .messgae {
     margin: 2rem 0rem;
   }
-  
-  .selected-rate span{
+
+  .selected-rate span {
     color: hsl(25, 97%, 53%);
     padding: .5rem 1rem;
-    background-color:hsl(213, 19%, 30%);
+    background-color: hsl(213, 19%, 30%);
     border-radius: 25px;
     font-size: 0.9rem;
   }
 
 }
-
